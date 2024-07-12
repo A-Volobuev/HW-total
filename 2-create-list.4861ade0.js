@@ -1,0 +1,2 @@
+const n=["Potatoes","Mushrooms","Garlic","Tomatos","Herbs","Condiments"],s=document.getElementById("ingredients"),e=n.map((n=>` \n    <li class="item content__alert alert__info">\n      <svg class="alert__info-icon">\n        <use href="./images/symbol-defs.svg#icon-star"></use>\n      </svg>\n      <strong class="info__title">${n}</strong>\n    </li>\n    `)).join("");s.innerHTML=e;
+//# sourceMappingURL=2-create-list.4861ade0.js.map

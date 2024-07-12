@@ -1,0 +1,2 @@
+!function(){var e=document.querySelector(".js-name-input"),t=document.querySelector(".js-name-output"),n=document.getElementById("clearBtn");e.addEventListener("input",(function(e){""===e.currentTarget.value?t.textContent="Anonymous":t.textContent=e.currentTarget.value})),e.addEventListener("beforeinput",(function(e){var t=e.data;t>="0"&&t<="9"&&(alert("В имени могут быть указаны только буквы"),e.preventDefault())})),n.addEventListener("click",(function(){e.value="",t.textContent="Anonymous"}))}();
+//# sourceMappingURL=5-input-name.a7b357a3.js.map

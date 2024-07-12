@@ -1,0 +1,2 @@
+const t=document.querySelector(".js-name-input"),e=document.querySelector(".js-name-output"),n=document.getElementById("clearBtn");t.addEventListener("input",(function(t){""===t.currentTarget.value?e.textContent="Anonymous":e.textContent=t.currentTarget.value})),t.addEventListener("beforeinput",(function(t){const e=t.data;e>="0"&&e<="9"&&(alert("В имени могут быть указаны только буквы"),t.preventDefault())})),n.addEventListener("click",(function(){t.value="",e.textContent="Anonymous"}));
+//# sourceMappingURL=5-input-name.479ac812.js.map
