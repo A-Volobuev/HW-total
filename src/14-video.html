@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video playback</title>
+    <link rel="stylesheet" href="css/14-video.css" />
+  </head>
+  <body>
+    <header class="task__header">
+
+      <button class="button button__back"> 
+          <a href="./index.html" class="button__back-link"> 
+              <svg class="button__back-icon">
+                  <use href="./images/symbol-defs.svg#icon-back" width="24" height="24"></use>
+              </svg>
+              Назад
+          </a>
+      </button>
+  
+
+      <h2 class="header__title">Задание 14</h2>
+    </header>
+
+    <iframe
+      id="vimeo-player"
+      src="https://player.vimeo.com/video/236203659"
+      width="640"
+      height="360"
+      frameborder="0"
+      allowfullscreen
+      allow="autoplay; encrypted-media"
+    ></iframe>
+
+    <script src="js/14-video.js" type="module"></script>
+  </body>
+</html>

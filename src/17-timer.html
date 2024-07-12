@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown timer</title>
+    <link rel="stylesheet" href="css/17-timer.css" />
+  </head>
+  <body>
+    <header class="task__header">
+
+      <button class="button button__back"> 
+          <a href="./index.html" class="button__back-link"> 
+              <svg class="button__back-icon">
+                  <use href="./images/symbol-defs.svg#icon-back" width="24" height="24"></use>
+              </svg>
+              Назад
+          </a>
+      </button>
+  
+
+      <h2 class="header__title">Задание 17</h2>
+    </header>
+
+  <div class="wrap">
+    <div class="timer-container">
+      <input type="text" id="datetime-picker" />
+
+      <div class="button-container">
+        <button class="button button__timer button__timer-disabled" type="button" data-start>Start</button>
+        <button class="button button__timer button__timer-disabled" type="button" data-stop>Stop</button>
+      </div>
+
+      <div class="timer"> 
+        <div class="field">
+          <span class="value" data-days>00</span>
+          <span class="label">Days</span>
+        </div>
+        <div class="field">
+          <span class="value" data-hours>00</span>
+          <span class="label">Hours</span>
+        </div>
+        <div class="field">
+          <span class="value" data-minutes>00</span>
+          <span class="label">Minutes</span>
+        </div>
+        <div class="field">
+          <span class="value" data-seconds>00</span>
+          <span class="label">Seconds</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="js/17-timer.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="./css/task-input.css" rel="stylesheet">
+    <title>Инпуты</title>
+</head>
+<body>
+    <header class="task__header">
+
+        <button class="button button__back"> 
+            <a href="index.html" class="button__back-link"> 
+                <svg class="button__back-icon">
+                    <use href="./images/symbol-defs.svg#icon-back" width="24" height="24"></use>
+                </svg>
+                Назад
+            </a>
+        </button>
+    
+
+        <h2 class="header__title">Инпуты</h2>
+    </header> 
+<!-- Решение -->
+
+<div class="main-container">
+    <div class="registration-conteiner">
+        <div class="container__title">
+            <h3 class="container__title-el">Double column</h3>
+        </div>
+    
+        <div class="registration-form__container">
+            <form class="registration-form">
+                <h4 class="registration-form__header">Section heading</h4>
+                <div class="registration-form__name">
+                    <section class="registration-form__input-container">
+                        <input type="text" class="input-default" placeholder="" required>
+                        <label class="input-default__text">First name *</label>
+                    </section>
+
+                    <section class="registration-form__input-container">
+                        <input type="text" class="input-default" placeholder="" required>
+                        <label class="input-default__text">Last name *</label>
+                    </section>
+    
+                    <section class="registration-form__input-container">
+                        <input type="text" class="input-default" placeholder="" required>
+                        <label class="input-default__text">Address 1 *</label>
+                    </section>
+    
+                    <section class="registration-form__input-container">
+                        <input type="text" class="input-default" placeholder="" required>
+                        <label class="input-default__text">Address 2 *</label>
+                    </section>
+                </div>
+    
+                <h4 class="registration-form__header">Section heading</h4>
+                <div class="registration-form__contacts">
+                    <section class="registration-form__input-container">
+                        <input type="email" class="input-default" placeholder="" required>
+                        <label class="input-default__text">Email *</label>
+                    </section>
+    
+                    <section class="registration-form__input-container">
+                        <input type="tel" class="input-default" placeholder="" required>
+                        <label class="input-default__text">Phone number *</label>
+                    </section>
+    
+                    <section class="registration-form__input-container">
+                        <select type="text" class="select-default" placeholder="" required>
+                            <option value=""></option>
+                            <option value="AL">Alabama</option>
+                            <option value="AK">Alaska</option>
+                            <option value="AZ">Arizona</option>
+                            <option value="AR">Arkansas</option>
+                            <option value="CA">California</option>
+                        </select>
+                        <label class="input-default__text">State *</label>
+                    </section>
+    
+                    <section class="registration-form__input-container">
+                        <input type="number" class="input-default" placeholder="" required>
+                        <label class="input-default__text">Zip code</label>
+                    </section>
+                </div>
+    
+                <button type="submit" class="button button__input-registration">Registration</button>
+            </form>
+        </div>
+    </div>
+
+    <section class="input-comment__input-container">
+        <input type="text" class="input-default input-comment" placeholder="" required>
+        <label class="input-default__text">First name *</label>
+    </section>
+    
+    <div class="login-container">
+        <div class="container__title">
+            <h3 class="container__title-el">Email & Password</h3>
+        </div>
+
+        <div class="login-form__container">
+            <form class="login-form">
+                <section class="registration-form__input-container">
+                    <input type="email" name="email" id="email"  class="input-default" placeholder="" required>
+                    <label class="input-default__text">Email address *</label>
+                </section>
+
+                <section class="registration-form__input-container">
+                    <input type="password" class="input-default" placeholder="" required>
+                    <label class="input-default__text">Password *</label>
+                </section>
+
+                <section class="registration-form__checkbox-container">
+                    <input id="agree" type="checkbox" class="checkbox-default" required>
+                    <label for="agree" class="checkbox__text">I accept the Terms and Conditions</label>
+                </section>
+
+                <button type="submit" class="button button__input-login">Sing In</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<script src="./js/task-inputs.js" type="module"></script>
+</body>
+</html>

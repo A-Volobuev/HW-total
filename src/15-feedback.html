@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feedback form</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/15-feedback.css" />
+  </head>
+  <body>
+    <header class="task__header">
+
+      <button class="button button__back"> 
+          <a href="./index.html" class="button__back-link"> 
+              <svg class="button__back-icon">
+                  <use href="./images/symbol-defs.svg#icon-back" width="24" height="24"></use>
+              </svg>
+              Назад
+          </a>
+      </button>
+  
+
+      <h2 class="header__title">Задание 15</h2>
+    </header>
+
+    <form class="feedback-form" autocomplete="off">
+      <label>
+        Email
+        <input  type="email" name="email" autofocus class="input-default" />
+      </label>
+      <label>
+        Message
+        <textarea class="input-default" name="message" rows="8"></textarea>
+      </label>
+      <button type="submit" class="button">Submit</button>
+    </form>
+
+
+    <script src="js/15-feedback.js" type="module"></script>
+  </body>
+</html>

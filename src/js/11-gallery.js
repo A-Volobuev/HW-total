@@ -1,21 +1,28 @@
 import { galleryItems } from './gallery-items.js';
-import SimpleLightbox from "simplelightbox";
-import "simplelightbox/dist/simple-lightbox.min.css";
 
 // решение
 const galleryContainer = document.querySelector('.gallery');
 const imgItemsMarkup = createImgItemsMarkup(galleryItems);
 
 // 1. Создаем разметку с карточками
-  function createImgItemsMarkup(items) {
-    return items
-      .map(({ preview, description, original }) => {
-        return `<a class="gallery__item" href="${original}">
-    <img class="gallery__image" src="${preview}" alt="${description}"  />
-  </a>`;
-      })
-      .join('');
-  }
+function createImgItemsMarkup (gallery) {
+    const markup = gallery.map(({preview, original, description}) => {
+        return `
+        <li class="gallery__item">
+    <a class="gallery__link" href="large-image.jpg">
+    <img
+        class="gallery__image"
+        src="${preview}"
+        data-source="${original}"
+        alt="${description}"
+    />
+    </a>
+</li>
+        `;
+    });
+
+    return markup.join('');
+}
 
     //1.1 Добавляем карточки в код 
 galleryContainer.innerHTML = imgItemsMarkup;
@@ -29,13 +36,13 @@ function onImgClick(event) {
     }
     // прерываем событие открытия ссылки
     event.preventDefault();
+    // Вводим в переменную получение оригинальной ссылки
+    const originalImg = event.target.dataset.source;
+// 3.Подключение скрипта и стилей библиотеки модального окна basicLightbox. 
+    basicLightbox.create(`
+		<img width="1400" height="900" src="${originalImg}">
+	`).show()
 }
-
-let gallery = new SimpleLightbox('.gallery a', {
-  captionSelector: 'img',
-  captionsData: `alt`,
-  captionDelay: 250,
-});
 
 // 5.Попытки сделать закрытие через еск
 window.addEventListener('keydown', onOpenOriginalImgEscapePress)

@@ -1,5 +1,6 @@
 // Добавить лодаш тротл 
 import throttle from 'lodash.throttle'
+import Notiflix from 'notiflix';
 
 
 // 
@@ -28,13 +29,16 @@ populateMessageOutput();
 function onFormSubmit(event) {
     event.preventDefault();
 
-    console.log('Oтправили форму')
+    if(textarea.value === '' || input.value === ''){
+        Notiflix.Notify.failure('Заполните все поля');
+    } else {
+        event.currentTarget.reset();
+        localStorage.removeItem(STORAGE_KEY);
 
-    event.currentTarget.reset();
-    localStorage.removeItem(STORAGE_KEY);
+        Notiflix.Notify.success('Комментарий отправлен');
+    }
+
 };
-
-
 
 // Сохраняем сообщение
 function onFormInput(event) {
@@ -54,5 +58,8 @@ function populateMessageOutput() {
     if(constructingMessage) {
         input.value = constructingMessage.email;
         textarea.value = constructingMessage.message;
+        Notiflix.Notify.info('Сообщение было востановлено');
     }
 }
+
+

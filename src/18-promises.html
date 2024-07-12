@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promise generator</title>
+    <link rel="stylesheet" href="css/18-promises.css" />
+  </head>
+  <body>
+    <header class="task__header">
+
+      <button class="button button__back"> 
+          <a href="./index.html" class="button__back-link"> 
+              <svg class="button__back-icon">
+                  <use href="./images/symbol-defs.svg#icon-back" width="24" height="24"></use>
+              </svg>
+              Назад
+          </a>
+      </button>
+  
+
+      <h2 class="header__title">Задание 18</h2>
+    </header>
+
+    <form class="form">
+
+      <label>
+        <section class="promises-form__input-container">
+          <input placeholder="" type="number" name="delay" required class="input-default" required />
+          <label for="delay" class="input-default__text"> First delay (ms) *</label>
+        </section>
+      </label>
+
+      <label>
+        <section class="promises-form__input-container">
+          <input  placeholder="" type="number" name="step" required class="input-default" required />
+          <label for="step" class="input-default__text"> Delay step (ms) *</label>
+        </section>
+      </label>
+
+      <label>
+        <section class="promises-form__input-container">
+          <input placeholder="" type="number" name="amount" required  class="input-default" required/>
+          <label for="amount" class="input-default__text"> Amount *</label>
+        </section>
+      </label>
+
+      <button class="button" type="submit">Create promises</button>
+    </form>
+
+    <script src="js/18-promises.js" type="module"></script>
+  </body>
+</html>

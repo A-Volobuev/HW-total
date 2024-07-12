@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="./css/4-counter.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2e0fefc55c.js" crossorigin="anonymous"></script>
+    <title>task4</title>
+</head>
+<body>
+    <header class="task__header">
+
+        <button class="button button__back"> 
+            <a href="./index.html" class="button__back-link"> 
+                <svg class="button__back-icon">
+                    <use href="./images/symbol-defs.svg#icon-back" width="24" height="24"></use>
+                </svg>
+                Назад
+            </a>
+        </button>
+    
+
+        <h2 class="header__title">Задание 4</h2>
+    </header>
+
+<!-- Решение -->
+<div id="counter" class="counter-container">
+    <button type="button" data-action="decrement" class="js-decrement button button__disabled button__decrement">-1</button>
+    <span id="value" class="js-value input-value">0</span>
+    <button type="button" data-action="increment" class="js-increment button button__increment">+1</button>
+</div>
+
+<div id="toastBox" class="toastbox toastbox__error"></div>
+<script src="js/4-counter.js" type="module"></script>
+</body>
+</html>

@@ -1,0 +1,366 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a :focus, a :active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input ::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button ::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 14px;
+  font-weight: 400;
+  overflow-x: hidden;
+}
+
+.container {
+  padding: 64px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.h1 {
+  font-weight: 300;
+  font-size: 96px;
+  letter-spacing: -1.5px;
+  line-height: 116%;
+}
+
+.h2 {
+  font-weight: 300;
+  font-size: 60px;
+  letter-spacing: -0.5px;
+  line-height: 120%;
+}
+
+.h3 {
+  font-weight: 300;
+  font-size: 48px;
+  letter-spacing: 0px;
+  line-height: 116%;
+}
+
+.h4 {
+  font-weight: 300;
+  font-size: 34px;
+  letter-spacing: 0.25px;
+  line-height: 123%;
+}
+
+.h5 {
+  font-weight: 300;
+  font-size: 24px;
+  letter-spacing: 0px;
+  line-height: 133%;
+}
+
+.h6 {
+  font-weight: 300;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  line-height: 160%;
+}
+
+.subtitle1 {
+  font-size: 16px;
+  letter-spacing: 0.15px;
+  line-height: 175%;
+}
+
+.subtitle2 {
+  font-weight: 500;
+  letter-spacing: 0.1px;
+  line-height: 157%;
+}
+
+.body1 {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.15px;
+  line-height: 150%;
+}
+
+.body2 {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.17px;
+  line-height: 143%;
+}
+
+.caption {
+  font-size: 12px;
+  letter-spacing: 0.4px;
+  line-height: 166%;
+}
+
+.overline {
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 266%;
+  text-transform: uppercase;
+}
+
+.button {
+  background-color: rgb(33, 150, 243);
+  color: rgb(255, 255, 255);
+  border-radius: 100px;
+  font-size: 15px;
+  font-weight: 500;
+  box-shadow: -2px 3px 3px rgba(0, 0, 0, 0.08);
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.08);
+}
+.button__back {
+  border-radius: 100px;
+  margin: 50px auto 0px 32px;
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 5px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 7px 4px rgba(0, 0, 0, 0.12);
+}
+.button__back:hover {
+  transform: scale(1);
+  animation: anim 1s linear both;
+}
+.button__back-link {
+  display: flex;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  line-height: 0.58;
+  text-transform: uppercase;
+  margin-right: 16px;
+}
+.button__back-icon {
+  fill: rgb(255, 255, 255);
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin: 8px 8px 8px 16px;
+}
+.button__decrement, .button__increment {
+  height: 42px;
+  width: 59px;
+  border-radius: 4px;
+}
+.button__disabled {
+  background-color: rgba(0, 0, 0, 0.08);
+  color: rgba(0, 0, 0, 0.87);
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 500;
+  box-shadow: -2px 3px 3px rgba(0, 0, 0, 0.08);
+  box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.08);
+}
+.button__clear {
+  margin-top: 20px;
+}
+.button__login {
+  margin-top: 16px;
+  padding: 8px 0px;
+}
+@media (max-width: 678px) {
+  .button__login {
+    width: 90%;
+  }
+}
+@media (min-width: 678px) {
+  .button__login {
+    padding: 8px 272px;
+  }
+}
+.button__widget {
+  margin-top: 40px;
+  padding: 8px 22px;
+  cursor: pointer;
+}
+.button__input-registration, .button__input-login {
+  padding: 6px 16px;
+  font-weight: 500;
+  margin-top: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+@keyframes anim {
+  100% {
+    transform: scale(1.2);
+  }
+}
+.task__header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  background-color: rgb(229, 246, 253);
+}
+
+.header__title {
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: 0px;
+  line-height: 133%;
+  margin: 20px 0px 0px 32px;
+  padding: 16px 0px 16px 0px;
+}
+
+.input-default {
+  padding: 16px 12px;
+  border: 1px solid rgba(0, 0, 0, 0.231372549);
+  border-radius: 4px;
+}
+
+.input-default__text {
+  position: absolute;
+  left: 12px;
+  top: 16px;
+  pointer-events: none;
+  color: rgba(0, 0, 0, 0.6);
+  padding: 2px 4px;
+  transition: top 0.3s, color 0.3s;
+}
+
+.input-default:hover, select:hover {
+  border-color: rgb(33, 150, 243);
+}
+
+.input-default:focus, select:hover {
+  border: 2px solid rgb(33, 150, 243);
+}
+
+.input-default:focus + label, select:focus + label {
+  top: -7px;
+  color: rgb(33, 150, 243);
+  background-color: white;
+}
+
+.input-default:valid + label, select:valid + label {
+  top: -7px;
+  background-color: white;
+}
+
+.controls-conteiner {
+  display: flex;
+  position: relative;
+  gap: 10px;
+  margin: 24px 0px 0px 32px;
+  height: 42px;
+}
+@media (max-width: 678px) {
+  .controls-conteiner {
+    flex-direction: column;
+    padding-right: 32px;
+  }
+}
+
+.input__number {
+  padding: 8px 12px;
+}
+@media (min-width: 678px) {
+  .input__number {
+    width: 133px;
+  }
+}
+
+.input__number-text {
+  left: 12px;
+  top: 13px;
+}
+
+svg {
+  width: 24px;
+  height: 24px;
+}
+
+.button-text {
+  text-transform: uppercase;
+  padding: 8px 22px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.div-boxes {
+  margin: 17px 0px 0px 32px;
+}
+
+.div-css-style {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.div-css-style:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+@media (max-width: 678px) {
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=10-el-collection.css.map */
