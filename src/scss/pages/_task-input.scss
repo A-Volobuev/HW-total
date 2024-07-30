@@ -1,0 +1,114 @@
+@import '../components/text-options';
+@import '../components/button';
+
+@import '../components/task-header';
+// 
+@import '../components/input-default';
+
+.header__title{
+    width: 300px;
+}
+.main-container{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 300px;
+
+    @media (min-width: 768px){
+        margin: 30px 0 0 131px;
+    }
+}
+.registration-conteiner, .login-container{
+    @media (min-width: 768px){
+        display: flex;
+    }
+}
+.container__title{
+    width: 420px;
+    margin-right: 48px;
+}
+.container__title-el{
+    font-size: $fs-34;
+    padding: 16px 0 ;
+}
+
+.registration-form__container, .login-form__container{
+    width: 100%;
+    @media (min-width: 768px){
+        width: 584px;
+    }
+}
+.registration-form__header{
+    font-size: $fs-24;
+    padding: 16px 0;
+    &:not(:first-child){
+        margin-top: 32px;
+    }
+    @media (max-width: 768px){
+        margin-left: 15px;
+    }
+}
+.registration-form__name, .registration-form__contacts{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows: 1fr 1fr;
+    gap: 16px;
+}
+.registration-form__input-container{
+    position: relative;
+}
+.input-default, .select-default{
+    padding: 16px 12px;
+    border: 1px solid $input-color;
+    border-radius: 4px;
+    width: 100%;
+}
+
+// Инпут комент
+.input-comment__input-container{
+    position: relative;
+    margin: 30px 0px 0px 58px;
+    @media (max-width: 480px){
+        margin: 30px 0px 0px 0px;
+    }
+    @media (min-width: 1200px){
+        margin: 30px 0px 0px 358px;
+        width: 600px;
+    }
+}
+
+// Форма логина
+.login-container{
+    margin-top: 36px;
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+    // Настройка чекбокса
+.registration-form__checkbox-container{
+    display: flex;
+    align-items:center;
+}
+.checkbox-default{
+    width: 18px;
+    height: 18px;
+    margin:0 12px;
+}
+.checkbox__text{
+    font-size: $fs-16;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+}
+
+// Настройка инпутов 
+.input-default:not(:placeholder-shown):invalid {
+    border: 2px solid red;
+}
+
+.input-default:not(:placeholder-shown):invalid + label {
+    top: -7px;
+    color: red;
+    background-color: white;
+}

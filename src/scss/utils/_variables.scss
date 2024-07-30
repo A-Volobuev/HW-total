@@ -1,0 +1,50 @@
+// Цвета
+$main-text-color:rgba(0, 0, 0, 0.87);
+$sendary-text-color: rgba(0, 0, 0, 0.6);
+$input-color: #0000003B;
+
+
+$footer-text-color: rgba(0, 0, 0, 0.38);
+
+$alert-info-color:rgb(229, 246, 253);
+$alert-info-text-color:rgb(1, 67, 97);
+
+$button-color:rgb(33, 150, 243);
+$button-text-color:rgb(255, 255, 255);
+
+$red-code-color: rgb(211, 47, 47);
+$blue-code-color:rgb(33, 150, 243);
+$green-code-color: rgb(46, 125, 50);
+$yelow-code-color: rgb(239, 108, 0);
+$light-blue-code-color: rgb(128, 198, 255);
+$grey-code-color:rgba(99, 99, 99, 0.6);
+
+$typography-library-bg:rgba(0, 0, 0, 0.08);
+
+// анимации
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+$animation-duration: 250ms;
+// breakpoints
+
+
+// ---Шрифт
+    // Жирность
+$fw-500: 500;
+$fw-400: 400;
+$fw-300: 300;
+    // Размер
+$fs-96: 96px; 
+$fs-64: 64px;
+$fs-60: 60px;
+$fs-49: 49px;
+$fs-48: 48px;
+$fs-38: 38px;
+$fs-34: 34px;
+$fs-28: 28px;
+$fs-24: 24px;
+$fs-20: 20px;
+$fs-16: 16px;
+$fs-15: 15px;
+$fs-14: 14px;
+$fs-12: 12px;
+    // Междустрочный интервал

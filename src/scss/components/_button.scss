@@ -1,0 +1,127 @@
+.button{
+    background-color:$button-color;
+    color:$button-text-color;
+    border-radius: 100px;
+
+    font-size: $fs-15;
+    font-weight: $fw-500;
+
+    box-shadow: -2px 3px 3px rgba(0, 0, 0, 0.08);;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.08);;
+
+
+// хедер
+    &__back{
+        border-radius: 100px;
+        margin: 50px auto 0px 32px;
+        box-shadow: 1px 4px 6px  rgba(0, 0, 0, 0.16);
+        box-shadow: 0px 5px 3px  rgba(0, 0, 0, 0.1);
+        box-shadow: 2px 7px 4px  rgba(0, 0, 0, 0.12);
+        &:hover{
+            transform: scale(1);
+            animation: anim 1s linear both;
+        }
+    }
+
+    &__back-link{
+        display: flex;
+        align-items: center;
+    
+        color: $button-text-color;
+        font-weight: $fw-500;
+        letter-spacing: 0.4px;
+        line-height: 0.58;
+        text-transform: uppercase;
+    
+        margin-right: 16px;
+    }
+
+    &__back-icon{
+        fill: $button-text-color;
+        display: block;
+        width: 24px;
+        height: 24px;
+        margin: 8px 8px 8px 16px;
+    }
+
+// Задание 4
+    &__decrement, &__increment{
+    height: 42px;
+    width: 59px;
+    border-radius: 4px;
+    }
+    &__disabled{
+    background-color:$typography-library-bg;
+    color:$main-text-color;
+    border-radius: 4px;
+
+    font-size: $fs-15;
+    font-weight: $fw-500;
+
+    box-shadow: -2px 3px 3px rgba(0, 0, 0, 0.08);;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.08);;
+    }
+
+// Задание 5
+    &__clear{
+        margin-top: 20px;
+    }
+// Задание 8
+    &__login{
+        margin-top: 16px;
+    padding: 8px 0px;
+
+    @media(max-width:678px){
+        width: 90%;
+    }
+    @media(min-width:678px){
+        padding: 8px 272px;
+        }
+    }
+//  Задание 9
+    &__widget{
+        margin-top: 40px;
+        padding: 8px 22px;
+        cursor: pointer
+    }
+
+// task-input
+    &__input-registration, &__input-login{
+    padding: 6px 16px;
+    font-weight: $fw-500;
+    margin-top: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+// Задание 16 
+    &__color-switcher{
+        width: 120px;
+        height: 40px;
+    }
+    &__color-switcher-disabled{
+        background-color:$typography-library-bg;
+        color:$main-text-color;
+    }
+
+    // Задание 17
+    &__timer{
+        width: 120px;
+        height: 40px;
+    }
+    &__timer-disabled{
+        background-color:$footer-text-color;
+        color:$main-text-color;
+        pointer-events: none;
+    }
+}
+
+
+
+
+@keyframes anim {
+    100%{
+        transform: scale(1.2);
+    }
+}

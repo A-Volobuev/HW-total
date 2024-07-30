@@ -1,0 +1,14 @@
+.task__header{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    background-color: $alert-info-color;
+}
+.header__title{
+    font-weight: $fw-400;
+    font-size: $fs-24;
+    letter-spacing: 0px;
+    line-height: 133%;
+
+    
+    margin: 20px 0px 0px 32px;
+    padding: 16px 0px 16px 0px;
+}

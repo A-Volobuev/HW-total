@@ -1,0 +1,38 @@
+@import '../components/text-options';
+@import '../components/button';
+
+@import '../components/task-header';
+
+.container__task1{
+    margin: 20px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.alert__info{
+    display: flex;
+    align-items: center;
+    background-color:$alert-info-color;
+    width: 260px;
+    height: 47px;
+
+    box-shadow: 0px 3px 5px  rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 6px 10px  rgba(0, 0, 0, 0.14);
+    box-shadow: 0px 1px 10px  rgba(0, 0, 0, 0.12);
+
+    &-icon{
+        width: 24px;
+        height: 24px;
+
+        margin: 14px 12px 14px 18px;
+    }
+}
+.info__{
+    &title{
+    font-size: $fs-16;
+    letter-spacing: 0.15px;
+    line-height: 150%;
+    }
+}
+

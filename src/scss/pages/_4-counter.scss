@@ -1,0 +1,26 @@
+@import '../components/text-options';
+@import '../components/button';
+
+@import '../components/task-header';
+@import '../components/toast-notify';
+// 
+
+.counter-container{
+    width: 173px;
+    margin: 20px 32px;
+    display: flex;
+    border: 2px solid $button-color;
+    border-radius: 5px;
+}
+
+.input-value{
+    padding: 13px 22px;
+
+    font-size: $fs-15;
+    font-weight: $fw-500;
+}
+.input-condition:focus ~ label {
+    transform: translateY(-60px) translateX(-55px) scale(1);
+    background-color: white;
+    padding: 0 .2em;
+}

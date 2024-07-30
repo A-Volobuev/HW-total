@@ -1,0 +1,40 @@
+@import '../components/text-options';
+@import '../components/button';
+
+@import '../components/task-header';
+// 
+
+@import '../components/input-default';
+@import '../components/toast-notify';
+
+.login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    margin-top: 20px;
+
+    @media(max-width:678px){
+        padding: 0px 10px;
+    }
+}
+
+.input-default{
+    width: 90%;
+    @media(min-width:678px){
+    width: 580px;
+    }
+}
+
+.login-form__title{
+    font-size: $fs-34;
+}
+.registration-form__input-container{
+    position: relative;
+    &:not(:first-child){
+        margin-top: 20px;
+    }
+}
+
+

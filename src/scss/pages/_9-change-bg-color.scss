@@ -1,0 +1,30 @@
+
+@import '../components/text-options';
+@import '../components/button';
+
+@import '../components/task-header';
+// 
+
+
+
+.widget {
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.widget__text-color{
+    font-size: $fs-49;
+    font-weight: $fw-500;
+
+    @media(max-width: 610px){
+        font-size: $fs-38;
+    }
+    @media(max-width: 460px){ 
+        font-size: $fs-28;
+    }
+    @media(max-width: 370px){ 
+        font-size: $fs-20;
+    }
+}

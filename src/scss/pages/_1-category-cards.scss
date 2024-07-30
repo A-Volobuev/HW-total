@@ -1,0 +1,60 @@
+@import '../components/text-options';
+@import '../components/button';
+
+@import '../components/task-header';
+// 
+@import '../components/alert-info';
+
+.container__task1{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    @media(max-width: 768px){
+        flex-direction: column;
+        align-items: center;
+    }
+    @media(min-width: 844px){
+    width: 824px;
+    }
+    @media(min-width: 1200px){
+    margin: 20px 228px;
+    }
+}
+
+.alert__info{ 
+    display: flex;
+    background-color:$alert-info-color;
+    width: 260px;
+    height: 152px;
+    box-shadow: 0px 3px 5px -1px #00000033;
+    box-shadow: 0px 6px 10px 0px #00000024;
+    box-shadow: 0px 1px 18px 0px #0000001F;
+
+
+    &-icon{
+        width: 24px;
+        height: 24px;
+
+        margin: 13px 12px 41px 16px;
+    }
+}
+
+.info__{
+    &title{
+    font-weight: $fw-400;
+    font-size: $fs-16;
+    letter-spacing: 0.15px;
+    line-height: 24px;
+    }
+    &column-text{
+    letter-spacing: 0.17px;
+    line-height: 20.02px;
+    color: $sendary-text-color;
+    list-style-type: disc;
+    margin-left: 20px;
+    }
+}
+.item{
+    list-style-type: none;
+    margin-top: 14px;
+}

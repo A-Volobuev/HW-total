@@ -1,0 +1,32 @@
+.input-default{
+    padding: 16px 12px;
+    border: 1px solid $input-color;
+    border-radius: 4px;
+}
+.input-default__text{
+    position: absolute;
+    left: 12px;
+    top: 16px;
+    pointer-events: none;
+    color: #00000099;
+    padding: 2px 4px;
+    transition: top .3s, color .3s;
+}
+.input-default:hover, select:hover{
+    border-color: $button-color;
+}
+
+.input-default:focus, select:hover{
+    border: 2px solid $button-color;
+}
+.input-default:focus + label, select:focus + label{
+    top:-7px;
+    color: $button-color;
+    background-color: white;
+}
+
+.input-default:valid + label, select:valid + label{
+    top:-7px;
+    background-color: white;
+}
+

@@ -1,0 +1,15 @@
+// ---------------------------------------------------------------Общие настройки---------------------------------------------------------------
+body{
+    font-family: 'Roboto', sans-serif;
+    color: $main-text-color; 
+    font-size: $fs-14;
+    font-weight: $fw-400;
+    overflow-x: hidden;
+}  
+.container{
+    padding: 64px;
+} 
+img { 
+display: block;
+max-width: 100%;
+}

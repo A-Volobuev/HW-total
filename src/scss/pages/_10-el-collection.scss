@@ -1,0 +1,64 @@
+@import '../components/text-options';
+@import '../components/button';
+
+@import '../components/task-header';
+// 
+@import '../components/input-default';
+
+
+
+.controls-conteiner{
+    display: flex;
+    position: relative;
+    gap: 10px;
+    margin: 24px 0px 0px 32px;
+    height: 42px;
+
+    @media(max-width: 678px){
+        flex-direction: column;
+        padding-right: 32px;
+    }
+} 
+
+.input__number{
+    padding: 8px 12px;
+    @media(min-width: 678px){
+        width: 133px;
+    }
+} 
+.input__number-text{
+    left: 12px;
+    top: 13px;
+}
+svg{
+    width: 24px;
+    height: 24px;
+}
+
+.button-text{
+    text-transform: uppercase;
+    padding: 8px 22px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.div-boxes{
+    margin: 17px 0px 0px 32px;
+}
+.div-css-style{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    &:not(:last-child) {
+        margin-bottom: 4px;
+    }
+}
+
+.button{
+    @media(max-width: 678px){
+        display: flex;
+        align-items:center;
+        justify-content: center;
+    }
+}

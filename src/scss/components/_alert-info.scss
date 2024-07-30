@@ -1,0 +1,16 @@
+.alert__info{
+    display: flex;
+    background-color:$alert-info-color;
+
+    &-icon{
+        width: auto;
+        height: auto;
+
+        margin: 14px 12px 41px 16px;
+    }
+}
+.alert__info-text{
+    margin-left: 4px;
+    display: flex;
+    flex-direction: column;
+}
