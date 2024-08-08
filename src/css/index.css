@@ -272,4 +272,9 @@ ol, ul {
 .task-text {
   line-height: 143%;
   letter-spacing: 0.17px;
+}
+
+.task__link-type{
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=index.css.map */

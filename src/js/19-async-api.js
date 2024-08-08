@@ -1,6 +1,6 @@
 // Импортирую настройки select из хбс
 import '../scss/19-api.scss'
-import CatApiService from './components/19-cat-api';
+import CatApiService from './components/19-async-cat-api';
 import createOptionsInSelect from '../templates/19-select-option.hbs';
 import informationBlockMarkup from '../templates/19-informative-block.hbs';
 import { Report } from 'notiflix/build/notiflix-report-aio';
@@ -9,9 +9,9 @@ import { Report } from 'notiflix/build/notiflix-report-aio';
 const selectBreed = document.querySelector('.breed-select');
 const informativeBlock = document.querySelector('.cat-info');
 const decorativeOption = document.querySelector('.decorative-option');
-const loader = document.querySelector('.container-loader'); 
+const loader = document.querySelector('.container-loader');
 
-// Добавляем сюда наш класс запросов 
+// Добавляем сюда наш класс запросов
 const catApiService = new CatApiService();
 
 // Слушатель событий на селектор
@@ -45,7 +45,7 @@ function onSelectBreedChange(e) {
             'Okay',
         );
     });
-} 
+}
 
 // 3. создаем функцию запроса и добавляем выбор в селект
 function selectOption() {

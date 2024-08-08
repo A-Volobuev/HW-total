@@ -50,7 +50,7 @@ export default class CatApiService {
             console.log(data);
             return data;
         })
-    }
+    } 
 
     get idBreed() {
         return this.breedId;
